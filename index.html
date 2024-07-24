@@ -19,13 +19,22 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 591 villa agency
-
-https://templatemo.com/tm-591-villa-agency
-
--->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("YOUR_USER_ID");
+        })();
+        
+        function sendEmail(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_7i125rh', 'template_o0894ew', event.target)
+                .then(function() {
+                    alert('Email sent successfully!');
+                }, function(error) {
+                    alert('Failed to send email: ' + JSON.stringify(error));
+                });
+        }
+    </script>
   </head>
 
 <body>
@@ -229,7 +238,7 @@ https://templatemo.com/tm-591-villa-agency
             <h2>Why Choose Us?</h2>
             <br>
             <div class="main-content">
-              <p style="font-size: 1.2em;">At <strong>Direct Trade Manufacture Construction (DTM)</strong> we specialize in crafting exceptional granny flats tailored to your needs and desires. <br>Whether you're seeking a cozy one-bedroom retreat, a spacious two-bedroom haven, or a luxurious entertainment space complete with a bar, spa, and sauna, we have the expertise to bring your vision to life. </p>
+              <p>At <strong>Direct Trade Manufacture Construction (DTM)</strong> we specialize in crafting exceptional granny flats tailored to your needs and desires. <br>Whether you're seeking a cozy one-bedroom retreat, a spacious two-bedroom haven, or a luxurious entertainment space complete with a bar, spa, and sauna, we have the expertise to bring your vision to life. </p>
               
               <div class="accordion" id="accordionExample" style="text-align: left;">
 
@@ -333,7 +342,7 @@ https://templatemo.com/tm-591-villa-agency
             <h2>Experience the Difference</h2>
             <br>
             <div class="main-content">
-              <p style="font-size: 1.2em;"><strong>Ready to embark on your granny flat journey?</strong> <br>Explore our portfolio, browse our services, and get in touch with us today to turn your dreams into reality. At DTM, your perfect granny flat awaits.</p>
+              <p"><strong>Ready to embark on your granny flat journey?</strong> <br>Explore our portfolio, browse our services, and get in touch with us today to turn your dreams into reality. At DTM, your perfect granny flat awaits.</p>
             </div>
           </div>
       </div>
@@ -348,20 +357,20 @@ https://templatemo.com/tm-591-villa-agency
             <div class="row">
               <div class="col-lg-4">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2>
-                   <p class="count-text ">Buildings<br>Finished Now</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
                   <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
-                  <p class="count-text ">Years<br>Experience</p>
+                   <p class="count-text ">Projects<br>Finished Now</p>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2>
-                  <p class="count-text ">Awwards<br>Won 2023</p>
+                  <h2 class="timer count-title count-number" data-to="6" data-speed="1000"></h2>
+                  <p class="count-text ">Ongoing<br>Projects</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="37" data-speed="1000"></h2>
+                  <p class="count-text ">Total<br>Clients</p>
                 </div>
               </div>
             </div>
@@ -487,15 +496,15 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
-            <h6>| Properties</h6>
-            <h2>We Provide The Best Property You Like</h2>
+            <h6>| Projects</h6>
+            <h2>We Provide The Best Project You Like</h2>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/data/projects/solace/1.jpeg" alt=""></a>
+          <div class="item gallery">
+            <a><img src="assets/images/data/projects/solace/1.jpeg" alt="" class="gallery-item" data-folder="solace" images=12></a>
             <span class="category">The Solace</span>
             <h6>12.3m x 3.2m</h6>
             <!-- <h4><a href="property-details.html">34 Beach Street Miami, OR 42680</a></h4> -->
@@ -512,8 +521,8 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/data/projects/eden/1.jpeg" alt=""></a>
+          <div class="item gallery">
+            <a><img src="assets/images/data/projects/eden/1.jpeg" alt="" class="gallery-item" data-folder="eden" images=6></a>
             <span class="category">The Eden</span>
             <h6>7.3m x 9.5m</h6>
             <!-- <h4><a href="property-details.html">54 Mid Street Florida, OR 27001</a></h4> -->
@@ -530,8 +539,8 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/data/projects/harmony/1.jpeg" alt=""></a>
+          <div class="item gallery">
+            <a><img src="assets/images/data/projects/harmony/1.jpeg" alt="" class="gallery-item" data-folder="harmony" images=9></a>
             <span class="category">The Harmony</span>
             <h6>7.3m x 9.5m</h6>
             <!-- <h4><a href="property-details.html">26 Old Street Miami, OR 38540</a></h4> -->
@@ -548,8 +557,8 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/data/projects/loft/1.jpeg" alt=""></a>
+          <div class="item gallery">
+            <a><img src="assets/images/data/projects/loft/1.jpeg" alt="" class="gallery-item" data-folder="loft" images=6></a>
             <span class="category">The Loft</span>
             <h6>4.5m x 10.5m</h6>
             <!-- <h4><a href="property-details.html">12 New Street Miami, OR 12650</a></h4> -->
@@ -566,8 +575,8 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/data/projects/bliss/1.jpeg" alt=""></a>
+          <div class="item gallery">
+            <a><img src="assets/images/data/projects/bliss/1.jpeg" alt="" class="gallery-item" data-folder="eden" images=5></a>
             <span class="category">The Bliss</span>
             <h6>7.0m x 9.0m</h6>
             <!-- <h4><a href="property-details.html">18 New Street Miami, OR 97219</a></h4> -->
@@ -611,7 +620,7 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-lg-8">
               <div class="item phone" style="margin-bottom: 20px;">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>010-020-0340<br><span>Phone Number</span></h6>
+                <h6>+61 474-428-344<br><span>Phone Number</span></h6>
               </div>
             </div>
             <div class="col-lg-8">
@@ -623,7 +632,7 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-5">
-          <form id="contact-form" action="" method="post">
+          <form id="contact-form" onsubmit="sendEmail(event)">
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
@@ -661,6 +670,15 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <div class="lightbox-content">
+      <span class="prev">&#10094;</span>
+      <img src="" alt="" class="lightbox-image">
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
   <footer>
     <div class="container">
       <div class="col-lg-8">
@@ -677,6 +695,7 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/scripts.js"></script>
 
   </body>
 </html>
