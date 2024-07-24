@@ -745,15 +745,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/data/projects/TKCS_HOUSE_CHINH_PHU/1.jpeg);
+  background-image: url(../images/data/projects/solace/1.jpeg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/data/projects/TKTC_HOUSE4.5mx10.5m_47.25m2/2.jpeg);
+  background-image: url(../images/data/projects/loft/2.jpeg);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/data/projects/TKTC_HOUSE_9.5mx13.0m_123.5m2/1.jpeg);
+  background-image: url(../images/data/projects/eden/1.jpeg);
 }
 
 .main-banner .item span.category {
@@ -819,7 +819,7 @@ Banner Style
   font-size: 24px;
   display: inline-block;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(235 34 34 / 77%);
   border-radius: 50%;
   opacity: 1;
   transition: all .3s;
@@ -1406,6 +1406,11 @@ Page Header Style
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
+}
+
+.accordion-item li {
+  list-style-type: circle;
+  margin-left:  3%;
 }
 
 
