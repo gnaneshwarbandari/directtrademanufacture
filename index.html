@@ -19,23 +19,8 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("YOUR_USER_ID");
-        })();
-        
-        function sendEmail(event) {
-            event.preventDefault();
-            emailjs.sendForm('service_7i125rh', 'template_o0894ew', event.target)
-                .then(function() {
-                    alert('Email sent successfully!');
-                }, function(error) {
-                    alert('Failed to send email: ' + JSON.stringify(error));
-                });
-        }
-    </script>
-  </head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+</head>
 
 <body>
 
@@ -632,7 +617,7 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <form id="contact-form" onsubmit="sendEmail(event)">
+          <form id="contact-form" action="https://formspree.io/f/mdknayez" method="POST">
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
