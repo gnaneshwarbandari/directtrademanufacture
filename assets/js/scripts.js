@@ -44,4 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
-  
+
+
+function updateImageSource() {
+    const image = document.getElementById('responsiveImage');
+    if (window.innerWidth <800) {
+        image.src = 'assets/images/logos/mobile_view.png';
+    } else {
+        image.src = 'assets/images/logos/main_view.png';
+    }
+}
+
+window.addEventListener('resize', updateImageSource);
+window.addEventListener('load', updateImageSource);
