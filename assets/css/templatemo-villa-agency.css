@@ -623,9 +623,9 @@ Header Style
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: center; */
   gap: 10px;
   padding: 20px;
 }
@@ -1907,11 +1907,17 @@ body {
     line-height: 40px;
     font-size: 20px;
   }
-
   /* .header-area .main-nav .nav li:last-child {
     display: none;
   } */
+  .contact-page .item{
+    min-width: 350px;
+  }
+  .contact-page .item h6{
+    font-size: 16px;
+  }
 }
+
 
 @media (max-width: 992px) {
   .sub-header {
