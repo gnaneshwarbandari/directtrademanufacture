@@ -423,10 +423,6 @@ Header Style
   letter-spacing: 2px;
 }
 
-.header-area .main-nav .logo img{
-  max-height: 60px;
-}
-
 .background-header .main-nav .logo h1 {
   line-height: 80px;
 }
@@ -1428,14 +1424,6 @@ Contact Style
   background-color: #f35525;
 }
 
-.logo-end .container {
-  height: 200px;
-}
-.logo-end .container .row img {
-  max-height: 200px; 
-  width: auto;
-}
-
 
 /* 
 ---------------------------------------------
@@ -1448,7 +1436,7 @@ footer.footer-no-gap {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 150px;
   background-color: #1e1e1e;
   min-height: 100px;
 }
@@ -1834,9 +1822,6 @@ body {
     line-height: 42px;
     width: 80%;
   }
-  .header-area .main-nav .logo img {
-    max-height: 45px;
-  }
 
   .main-banner .owl-dots {
     bottom: 30px;
@@ -1910,7 +1895,6 @@ body {
   footer p {
     padding-top: 20px;
     line-height: 30px;
-    font-size: 13px;
   }
   .lightbox-image {
     max-width: 80%;
@@ -1932,15 +1916,6 @@ body {
   .contact-page .item h6{
     font-size: 16px;
   }
-  .logo-end .container {
-    height: 150px;
-  }
-  .logo-end .container .row img{
-    max-height: 150px; 
-    width: auto;
-    padding: 10px;
-  }
-  
 }
 
 
